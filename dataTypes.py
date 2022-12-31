@@ -8,22 +8,23 @@ x= 5
 y = "clement"
 
 # Text Types:
-str
+str # ''
  
 # Numeric Types:
 int 
 float
-complex
+complex 
 
 # Boolean Types:
-bool
+bool # True or False
 
 # Sequence Types:
-list 
-tuple
-range
+list #[]
+tuple #()
+range #range(0, len(x))
 
 # Set Types:
-set
-frozenset
+set #{"integer", "item"}
+dict #{"integer": "integer", "item": "one"}
+frozenset #frozenset({})
 
