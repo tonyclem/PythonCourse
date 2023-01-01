@@ -48,3 +48,24 @@ for x in set(li):
     li.remove(x)
 li = list(set(li))
 print(li)
+
+# Exercise IIII
+
+def highest_even(li):
+    highest_even_number = 0
+    for x in li:
+        if x % 2 == 0:
+            # print(f"{x} is Even number")
+            if x > highest_even_number:
+                highest_even_number = x
+    return highest_even_number
+print(highest_even([1,3,5,6,7,8,9,10,11,12,13]))
+
+# Second Solution
+def highest_evens(li):
+    even = []
+    for number in li:
+        if number % 2 == 0:
+            even.append(number)
+    return max(even)
+print(highest_evens([2,4,5,6,7,8,9,10,11,12]))
