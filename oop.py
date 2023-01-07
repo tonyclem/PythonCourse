@@ -70,26 +70,26 @@ cat2 = Cat('nice', 2)
 cat1 = Cat('great', 4)
 cat1.oldest_func()
 
-# Solution
 
+# Example
+class PlayerCharacter:
+    # Class Object Attribute
+    membership = True
 
-class Cat:
-    species = 'mammal'
-
+    # Instance attributes
     def __init__(self, name, age):
-        self.name = name
-        self.age = age
+        if self.membership:
+            self.name = name  # attributes
+            self.age = age
+
+    def run(self):
+        # print(f"My name is {self.name}")
+        print('run')
+
+    @classmethod
+    def adding_things(cls, num1, num2):
+        return num1 + num2
 
 
-cat1 = Cat('Peanut', 3)
-cat2 = Cat('Garfield', 2)
-cat3 = Cat('snicker', 1)
-
-# Find the oldest cat
-
-
-def get_oldest_cat(*args):
-    return max(args)
-
-
-print(f"The oldest cat is {get_oldest_cat(cat1.age, cat2.age, cat3.age)}")
+player1 = PlayerCharacter('clement', 20)
+print(player1.adding_things(5, 5))
