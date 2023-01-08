@@ -1,30 +1,30 @@
 # In programming, data type is an important concept
 
-## Fundamental Data types
+# Fundamental Data types
 
 # Variables are containers for storing data values.
-x= 5
+x = 5
 
 y = "clement"
 
 # Text Types:
-str # ''
- 
+str  # ''
+
 # Numeric Types:
-int 
+int
 float
-complex 
+complex
 
 # Boolean Types:
-bool # True or False
+bool  # True or False
 
 # Sequence Types:
-list #[]
-tuple #()
-range #range(0, len(x))
+list  # []
+tuple  # ()
+dict  # {}
+range  # range(0, len(x))
 
 # Set Types:
-set #{"integer", "item"}
-dict #{"integer": "integer", "item": "one"}
-frozenset #frozenset({})
-
+set  # {"integer", "item"}
+dict  # {"integer": "integer", "item": "one"}
+frozenset  # frozenset({})
