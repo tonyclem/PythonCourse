@@ -1,17 +1,19 @@
 class PlayerCharacter:
     def __init__(self, name, age):
-        self.name = name
-        self.age = age
+        self._name = name
+        self._age = age
 
     def run(self):
         print("Starting")
 
     def speak(self):
-        print(f"my name is {self.name}, my age is {self.age} years old")
+        print(f"my name is {self._name}, my age is {self._age} years old")
 
 
 player1 = PlayerCharacter('clement', 100)
-print(player1.speak())  # is Called Abstractions
+player1.name = '!!!'
+print(player1.speak)  # is Called Abstractions
+print(player1.name)
 
 
 class PlayerCharacterName():
