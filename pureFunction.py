@@ -78,3 +78,8 @@ def accumulate_total(acc, item):
 
 print(reduce(accumulate_total, my_numbers, sum(scores)))  # 456
 print(reduce(accumulate_total, scores + my_numbers, 0))  # 456
+
+my_num = [1, 2, 4, 6, 7]
+print(list(map(lambda item: item * 2, my_num)))
+print(list(filter(lambda item: item % 2 != 0, my_num)))
+print(reduce(lambda acc, item: acc + item, my_num))
