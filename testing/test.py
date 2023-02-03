@@ -1,5 +1,6 @@
 import unittest
 import script
+import game
 
 
 class TestMain(unittest.TestCase):
@@ -28,6 +29,11 @@ class TestMain(unittest.TestCase):
 
     def tearDown(self):
         print('cleaning up test')
+
+
+class TestGame(unittest.TestCase):
+    def test_input(self):
+        pass
 
 
 if __name__ == '__main__':
